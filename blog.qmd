@@ -1,0 +1,29 @@
+---
+title: "Quan's blog"
+title-block-banner: adn.jpeg
+date: "Wednesday Sep 25, 2024"
+date-format: dddd MMM D, YYYY
+date-modified: last-modified
+date-modified-format: dddd MMM D, YYYY
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+format:
+  html:
+    smooth-scroll: true
+    anchor-sections: true
+    other-links:
+      - text: NASA Open Data
+        href: https://data.nasa.gov/
+    code-links:
+      - text: Data Import Code
+        icon: file-code
+        href: data-import.py
+---
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.

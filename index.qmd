@@ -1,7 +1,44 @@
 ---
-title: "mysite"
+title: "My Blog"
+
+listing:
+  contents: posts # this name must match the name of the folder you created in step #1; here, all Quarto docs in the `posts` directory will be included on your listing page
+  type: default # or `default` or `table`; each type has its own set of yaml options to include
+  sort: "date desc" # can also sort on more than one field
+  categories: true # allows you to sort posts by assigned categories
+
+website:
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - section: "Tản mạn"
+        contents:
+          - text: "HowIlearnmaths"
+            href: learn_maths.qmd
+      - section: "Học thuật"
+        contents:
+          - section: "Set theory"
+            contents:
+              - text: "Set"
+                href: set.qmd
+          - section: "Group theory"
+            contents:
+              - text: "Groups, Strings and Fields"
+                href: groups-strings-fields.qmd
+    background: light
+    foreground: primary
+    border: true
+    favicon: "lcat.png"
+  navbar:
+    logo: "lcat.png"
+    background: dark
+    foreground: primary
+    search: true
+    left:
+      - text: "About"
+        href: about.qmd
+      - posts.qmd
+  # (additional metadata excluded for brevity)
+  margin-header: subscribe.html
 ---
-
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
